@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Fuentes
+3.0 VARIABLES
+4.0 btns
+5.0 GENERAL
+6.0 GENERAL
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://portinos.s3.amazonaws.com/libs/css/intel-base.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  clear: both; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/*para ocultar texto y que lo lean los lectores de no videntes*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/*para eliminar los float*/
+header, section, footer, aside {
+  clear: both; }
+
+/*imagen al 100% de ancho responsive*/
+.image-responsive {
+  width: 100%;
+  height: auto; }
+
+/*input al 100%*/
+input, select {
+  display: block;
+  width: 100%; }
+
+/*elimina el diseño por defecto en el iphone*/
+input[type=submit] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+
+button {
+  border: none;
+  background-color: transparent; }
+
+/*--------------------------------------------------------------
+2.0 Fuentes
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.0 variables
+--------------------------------------------------------------*/
+/*FUENTES*/
+/*COLORES*/
+/* GRADIENTES */
+/*GRID OPTIONS*/
+/*--------------------------------------------------------------
+4.0 btns
+--------------------------------------------------------------*/
+/*FUENTES*/
+/*COLORES*/
+/* GRADIENTES */
+/*GRID OPTIONS*/
+.main-btn {
+  background: #7832b2;
+  background: -moz-linear-gradient(90deg, #7832b2 0%, #391855 100%);
+  background: -webkit-linear-gradient(90deg, #7832b2 0%, #391855 100%);
+  background: linear-gradient(90deg, #7832b2 0%, #391855 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7832b2",endColorstr="#391855",GradientType=1);
+  -webkit-box-shadow: 15px 50px 62px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 50px 62px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 50px 62px 10px rgba(0, 0, 0, 0.75);
+  color: #fefefe;
+  font-family: "IntelClearBold";
+  font-size: 1.4vw;
+  line-height: 1.67;
+  letter-spacing: -0.2px;
+  padding: 0.5vw 4vw;
+  cursor: pointer; }
+
+/*****************/
+/**** MOBILE ****/
+/*****************/
+@media screen and (max-width: 768px) {
+  .main-btn {
+    font-size: 5vw;
+    line-height: 1.67;
+    letter-spacing: -0.2px;
+    padding: 0.75vw 7vw; } }
+/*******************/
+/**** XL SCREEN ****/
+/*******************/
+@media screen and (min-width: 1280px) {
+  .main-btn {
+    font-size: 17px;
+    padding: 9.6px 50px; } }
+/*--------------------------------------------------------------
+5.0 Slick carousel styles
+--------------------------------------------------------------*/
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/*--------------------------------------------------------------
+6.0 General
+--------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background: black; }
+
+#___gatsby {
+  margin: 0 auto;
+  padding: 0;
+  color: #ffffff;
+  font-size: 100%;
+  width: 100%;
+  max-width: 1280px; }
+
+#___gatsby h1,
+#___gatsby h2 {
+  font-family: "IntelClearPro"; }
+
+#___gatsby h3,
+#___gatsby h4 {
+  font-family: "IntelClearBold"; }
+
+#___gatsby h5,
+#___gatsby h6 {
+  font-family: "IntelClearThin"; }
+
+#___gatsby p {
+  font-family: "IntelClear"; }
+
+#___gatsby sup {
+  font-size: 57%; }
+
+/*****************/
+/**** DESKTOP ****/
+/*****************/
+.home {
+  background: black;
+  background-image: url("../img/home-background-dk.png");
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  position: relative; }
+  .home .intel-logo {
+    position: absolute;
+    top: 5%;
+    right: 7.6%;
+    width: 6.5vw; }
+  .home .top-wrapper {
+    padding: 8.2vw 0 0 7.4vw;
+    position: relative; }
+    .home .top-wrapper .headlines-wrapper h1 {
+      font-size: 5.85vw;
+      line-height: 0.91;
+      letter-spacing: -0.8px;
+      text-align: left;
+      color: #fefefe;
+      width: 70%; }
+    .home .top-wrapper .headlines-wrapper p {
+      font-size: 2.18vw;
+      font-weight: bold;
+      margin-top: 1.65vw; }
+    .home .top-wrapper .coreFamily {
+      position: absolute;
+      top: 3vw;
+      right: 0.3vw;
+      width: 41vw; }
+  .home .links-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0% auto;
+    padding: 0%;
+    width: 87%; }
+    .home .links-wrapper .link {
+      background-size: cover;
+      width: 28vw;
+      height: 28vw;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .home .links-wrapper .link a {
+        font-family: "IntelClearPro", serif;
+        font-size: 3.3vw;
+        line-height: 1.58;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #fefefe; }
+      .home .links-wrapper .link.casual {
+        background-image: url("../img/home-casual-btn.png"); }
+      .home .links-wrapper .link.competitivo {
+        background-image: url("../img/home-advanced-btn.png"); }
+      .home .links-wrapper .link.extremo {
+        background-image: url("../img/home-extreme-btn.png"); }
+  .home .slick-slider {
+    display: none; }
+  .home .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw 0; }
+
+/*****************/
+/**** MOBILE ****/
+/*****************/
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url("../img/home-background-mb.png");
+    height: auto; }
+    .home .intel-logo {
+      display: none; }
+    .home .top-wrapper {
+      padding: 8.2vw 0 5vw;
+      position: relative; }
+      .home .top-wrapper .headlines-wrapper h1 {
+        font-size: 12.6vw;
+        letter-spacing: -0.6px;
+        text-align: center;
+        width: 100%; }
+        .home .top-wrapper .headlines-wrapper h1 span {
+          display: block; }
+      .home .top-wrapper .headlines-wrapper p {
+        font-size: 5.2vw;
+        text-align: center;
+        line-height: 1.15;
+        letter-spacing: -0.7px;
+        margin-top: 9vw; }
+      .home .top-wrapper .coreFamily {
+        display: none; }
+    .home .links-wrapper {
+      width: 100%; }
+      .home .links-wrapper.desktop {
+        display: none; }
+      .home .links-wrapper .link {
+        width: 70vw;
+        height: 70vw;
+        margin: 0 auto; }
+        .home .links-wrapper .link a {
+          font-size: 7.5vw;
+          line-height: 0.98; }
+    .home .slick-slider {
+      display: block; }
+    .home .btn-wrapper {
+      margin: 3vw 0 0; } }
+/*******************/
+/**** XL SCREEN ****/
+/*******************/
+@media screen and (min-width: 1280px) {
+  .home {
+    min-height: 100vh; }
+    .home .intel-logo {
+      width: 83.2px; }
+    .home .top-wrapper {
+      padding: 104.95px 0 0 95px; }
+      .home .top-wrapper .headlines-wrapper h1 {
+        font-size: 74.88px; }
+      .home .top-wrapper .headlines-wrapper p {
+        font-size: 27.9px;
+        margin-top: 21.12px; }
+      .home .top-wrapper .coreFamily {
+        top: 38.4px;
+        right: 3.84px;
+        width: 524.8px; }
+    .home .links-wrapper .link {
+      width: 358px;
+      height: 358px; }
+      .home .links-wrapper .link a {
+        font-size: 42.25px; }
+    .home .btn-wrapper {
+      margin: 12.8px 0; } }
+
+/*# sourceMappingURL=style.css.map */

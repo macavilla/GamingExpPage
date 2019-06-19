@@ -1,0 +1,309 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Fuentes
+3.0 VARIABLES
+4.0 btns
+5.0 GENERAL
+6.0 GENERAL
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+
+@import "sass/reset";
+
+/*--------------------------------------------------------------
+2.0 Fuentes
+--------------------------------------------------------------*/
+
+@import "sass/fonts";
+
+/*--------------------------------------------------------------
+3.0 variables
+--------------------------------------------------------------*/
+
+@import "sass/variables";
+
+/*--------------------------------------------------------------
+4.0 btns
+--------------------------------------------------------------*/
+
+@import "sass/btns";
+
+/*--------------------------------------------------------------
+5.0 Slick carousel styles
+--------------------------------------------------------------*/
+
+@import "sass/slick";
+
+/*--------------------------------------------------------------
+6.0 General
+--------------------------------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background: black;
+}
+
+#___gatsby {
+  margin: 0 auto;
+  padding: 0;
+  color: #ffffff;
+  font-size: 100%;
+  width: 100%;
+  max-width: 1280px;
+}
+
+#___gatsby h1,
+#___gatsby h2 {
+  font-family: "IntelClearPro";
+}
+
+#___gatsby h3,
+#___gatsby h4 {
+  font-family: "IntelClearBold";
+}
+
+#___gatsby h5,
+#___gatsby h6 {
+  font-family: "IntelClearThin";
+}
+
+#___gatsby p {
+  font-family: "IntelClear";
+}
+
+#___gatsby sup {
+  font-size: 57%;
+}
+
+/*****************/
+/**** DESKTOP ****/
+/*****************/
+
+.home {
+  background: black;
+  background-image: url("../img/home-background-dk.png");
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  position: relative;
+
+  .intel-logo {
+    position: absolute;
+    top: 5%;
+    right: 7.6%;
+    width: 6.5vw;
+  }
+
+  .top-wrapper {
+    padding: 8.2vw 0 0 7.4vw;
+    position: relative;
+    .headlines-wrapper {
+      h1 {
+        font-size: 5.85vw;
+        line-height: 0.91;
+        letter-spacing: -0.8px;
+        text-align: left;
+        color: #fefefe;
+        width: 70%;
+      }
+
+      p {
+        font-size: 2.18vw;
+        font-weight: bold;
+        margin-top: 1.65vw;
+      }
+    }
+
+    .coreFamily {
+      position: absolute;
+      top: 3vw;
+      right: 0.3vw;
+      width: 41vw;
+    }
+  }
+
+  .links-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0% auto;
+    padding: 0%;
+    width: 87%;
+
+    .link {
+      background-size: cover;
+      width: 28vw;
+      height: 28vw;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        font-family: "IntelClearPro", serif;
+        font-size: 3.3vw;
+        line-height: 1.58;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #fefefe;
+      }
+
+      &.casual {
+        background-image: url("../img/home-casual-btn.png");
+      }
+      &.competitivo {
+        background-image: url("../img/home-advanced-btn.png");
+      }
+      &.extremo {
+        background-image: url("../img/home-extreme-btn.png");
+      }
+    }
+  }
+
+  .slick-slider {
+    display: none;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw 0;
+  }
+}
+
+/*****************/
+/**** MOBILE ****/
+/*****************/
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url("../img/home-background-mb.png");
+    height: auto;
+
+    .intel-logo {
+      display: none;
+    }
+
+    .top-wrapper {
+      padding: 8.2vw 0 5vw;
+      position: relative;
+      .headlines-wrapper {
+        h1 {
+          font-size: 12.6vw;
+          letter-spacing: -0.6px;
+          text-align: center;
+          width: 100%;
+          span {
+            display: block;
+          }
+        }
+
+        p {
+          font-size: 5.2vw;
+          text-align: center;
+          line-height: 1.15;
+          letter-spacing: -0.7px;
+          margin-top: 9vw;
+        }
+      }
+
+      .coreFamily {
+        display: none;
+      }
+    }
+
+    .links-wrapper {
+      width: 100%;
+
+      &.desktop {
+        display: none;
+      }
+
+      .link {
+        width: 70vw;
+        height: 70vw;
+        margin: 0 auto;
+
+        a {
+          font-size: 7.5vw;
+          line-height: 0.98;
+        }
+      }
+    }
+
+    .slick-slider {
+      display: block;
+    }
+
+    .btn-wrapper{
+      margin: 3vw 0 0;
+    }
+  }
+}
+
+/*******************/
+/**** XL SCREEN ****/
+/*******************/
+
+@media screen and (min-width: 1280px) {
+
+  .home {
+    min-height: 100vh;
+  
+    .intel-logo {
+      width: 83.2px;
+    }
+  
+    .top-wrapper {
+      padding: 104.95px 0 0 95px;
+      .headlines-wrapper {
+        h1 {
+          font-size: 74.88px;
+        }
+  
+        p {
+          font-size: 27.9px;
+          margin-top: 21.12px;
+        }
+      }
+  
+      .coreFamily {
+        top: 38.4px;
+        right: 3.84px;
+        width: 524.8px;
+      }
+    }
+  
+    .links-wrapper {
+  
+      .link {
+        width: 358px;
+        height: 358px;
+
+  
+        a {
+          font-size: 42.25px;
+
+        }
+      }
+    }
+  
+    .btn-wrapper {
+      margin: 12.8px 0;
+    }
+  }
+}
