@@ -246,22 +246,22 @@ body {
   width: 100%;
   max-width: 1280px; }
 
-#___gatsby h1,
-#___gatsby h2 {
+h1,
+h2 {
   font-family: "IntelClearPro"; }
 
-#___gatsby h3,
-#___gatsby h4 {
+h3,
+h4 {
   font-family: "IntelClearBold"; }
 
-#___gatsby h5,
-#___gatsby h6 {
+h5,
+h6 {
   font-family: "IntelClearThin"; }
 
-#___gatsby p {
+p {
   font-family: "IntelClear"; }
 
-#___gatsby sup {
+sup {
   font-size: 57%; }
 
 /*****************/
@@ -335,6 +335,209 @@ body {
     align-items: center;
     margin: 1vw 0; }
 
+.wrapper {
+  max-width: 1280px; }
+  .wrapper.casual {
+    background: url("../img/casual-background.png");
+    background-size: cover; }
+    .wrapper.casual .performance .specs-wrapper table.comparison .frequency {
+      width: 8.5vw; }
+    .wrapper.casual .performance .specs-wrapper table.comparison .cores {
+      width: 3vw; }
+    .wrapper.casual .performance .specs-wrapper table.comparison .threads {
+      width: 7vw; }
+    .wrapper.casual .performance .specs-wrapper table.comparison .cache {
+      width: 3vw; }
+    .wrapper.casual .performance .specs-wrapper table.comparison .locked {
+      width: 2vw; }
+  .wrapper.competitivo {
+    background: url("../img/competitivo-background.png");
+    background-size: cover; }
+    .wrapper.competitivo .performance .specs-wrapper table.comparison .frequency {
+      width: 8.5vw; }
+    .wrapper.competitivo .performance .specs-wrapper table.comparison .cores {
+      width: 3vw; }
+    .wrapper.competitivo .performance .specs-wrapper table.comparison .threads {
+      width: 7vw; }
+    .wrapper.competitivo .performance .specs-wrapper table.comparison .cache {
+      width: 3vw; }
+    .wrapper.competitivo .performance .specs-wrapper table.comparison .locked {
+      width: 2vw; }
+  .wrapper.extremo {
+    background: url("../img/extremo-background.png");
+    background-size: cover; }
+    .wrapper.extremo .performance .specs-wrapper table.comparison .frequency {
+      width: 8.5vw; }
+    .wrapper.extremo .performance .specs-wrapper table.comparison .cores {
+      width: 3vw; }
+    .wrapper.extremo .performance .specs-wrapper table.comparison .threads {
+      width: 7vw; }
+    .wrapper.extremo .performance .specs-wrapper table.comparison .cache {
+      width: 3vw; }
+    .wrapper.extremo .performance .specs-wrapper table.comparison .locked {
+      width: 2vw; }
+  .wrapper .intro {
+    padding-left: 7.81vw;
+    width: 40%; }
+    .wrapper .intro .headlines-wrapper h2 {
+      font-size: 5.85vw;
+      line-height: 0.91;
+      letter-spacing: -0.75px;
+      text-align: left;
+      color: #fefefe; }
+    .wrapper .intro .headlines-wrapper p {
+      font-weight: bold;
+      font-size: 1.95vw;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      text-align: left;
+      color: #fefefe;
+      margin-top: 1.5vw; }
+    .wrapper .intro .processor-info {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 6vw 0 7vw; }
+      .wrapper .intro .processor-info .badges {
+        display: flex; }
+      .wrapper .intro .processor-info img {
+        margin-right: 3vw;
+        width: 8.5vw;
+        box-shadow: 0 0 30px #7932b2;
+        -webkit-box-shadow: 0 0 30px #7932b2;
+        -moz-box-shadow: 0 0 30px #7932b2; }
+      .wrapper .intro .processor-info p {
+        font-size: 1.53vw;
+        line-height: 1.28;
+        text-align: left;
+        color: #ffffff; }
+        .wrapper .intro .processor-info p span.blue {
+          display: block;
+          color: #94c9ff;
+          font-size: 2.4vw;
+          font-weight: bold;
+          font-style: italic;
+          letter-spacing: -0.31px; }
+  .wrapper .performance {
+    padding: 4.5vw 7.81vw 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    .wrapper .performance .bullets-wrapper {
+      width: 52%; }
+      .wrapper .performance .bullets-wrapper h2 {
+        font-size: 5.33vw;
+        font-weight: bold;
+        line-height: 0.86;
+        letter-spacing: 0.34px;
+        text-align: left;
+        color: #94c9ff; }
+      .wrapper .performance .bullets-wrapper ul {
+        padding-left: 8.5vw;
+        margin: 3.1vw 0 0; }
+        .wrapper .performance .bullets-wrapper ul li {
+          font-family: "IntelClear", serif;
+          position: relative;
+          margin: 1.75vw 0;
+          font-size: 1.5vw; }
+          .wrapper .performance .bullets-wrapper ul li::before {
+            background-image: url("../img/list-item.png");
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: -60px; }
+    .wrapper .performance .specs-wrapper table.comparison caption {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 3% 0; }
+      .wrapper .performance .specs-wrapper table.comparison caption span {
+        font-family: "IntelClearPro";
+        font-size: 2.95vw;
+        font-weight: bold;
+        line-height: 0.95;
+        text-align: center;
+        color: #94c9ff; }
+      .wrapper .performance .specs-wrapper table.comparison caption img {
+        width: 7vw;
+        margin-left: 2vw;
+        box-shadow: 0 0 30px #7932b2;
+        -webkit-box-shadow: 0 0 30px #7932b2;
+        -moz-box-shadow: 0 0 30px #7932b2; }
+    .wrapper .performance .specs-wrapper table.comparison tr.row td.left {
+      background-image: url("../img/td-left-background.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 11.7vw;
+      height: 5vw;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .wrapper .performance .specs-wrapper table.comparison tr.row td.left .data-wrapper p {
+        font-size: 1.4vw;
+        line-height: 1.11;
+        letter-spacing: -0.45px;
+        text-align: right;
+        color: #ffffff; }
+        .wrapper .performance .specs-wrapper table.comparison tr.row td.left .data-wrapper p span.blue {
+          color: #94c9ff;
+          font-weight: bold;
+          display: block; }
+    .wrapper .performance .specs-wrapper table.comparison tr.row:nth-of-type(odd) td.right {
+      background-image: url("../img/td-odd-background.png");
+      background-size: cover; }
+    .wrapper .performance .specs-wrapper table.comparison tr.row:nth-of-type(even) td.right {
+      background-image: url("../img/td-even-background.png");
+      background-size: cover; }
+    .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.7vw;
+      padding-left: 6vw;
+      height: 5vw;
+      width: 22vw; }
+      .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper .icon img {
+        max-width: 100%; }
+      .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper p {
+        font-family: IntelClear;
+        font-size: 1.5vw;
+        font-weight: bold;
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: #94c9ff;
+        width: 6.5vw; }
+        .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper p span.smaller {
+          display: block;
+          font-size: 1vw; }
+  .wrapper .animation .animation-component-wrapper {
+    padding: 0 7.81vw;
+    margin: 0 auto; }
+    .wrapper .animation .animation-component-wrapper > div {
+      display: flex;
+      flex-flow: row nowrap; }
+  .wrapper .art .art-wrapper {
+    display: flex;
+    justify-content: center; }
+    .wrapper .art .art-wrapper img {
+      width: 90%; }
+  .wrapper .art .btn-wrapper {
+    display: flex;
+    justify-content: center; }
+  .wrapper footer {
+    padding: 5% 7.81vw; }
+    .wrapper footer p.legal {
+      font-family: "IntelClearThin", sans-serif;
+      font-size: 0.85vw;
+      font-weight: 300;
+      line-height: 1.45;
+      letter-spacing: -0.06px; }
+
 /*****************/
 /**** MOBILE ****/
 /*****************/
@@ -376,7 +579,114 @@ body {
     .home .slick-slider {
       display: block; }
     .home .btn-wrapper {
-      margin: 3vw 0 0; } }
+      margin: 3vw 0 0; }
+
+  .wrapper.casual {
+    background: url("../img/casual-background-mb.png");
+    background-size: cover; }
+  .wrapper .intro {
+    padding-left: 5.6vw;
+    width: 57%; }
+    .wrapper .intro .headlines-wrapper h2 {
+      font-size: 19vw;
+      line-height: 0.72;
+      letter-spacing: 1.43px; }
+    .wrapper .intro .headlines-wrapper p {
+      font-size: 4.8vw;
+      line-height: 1.25;
+      margin-top: 7vw; }
+    .wrapper .intro .processor-info {
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      margin-bottom: 9vw; }
+      .wrapper .intro .processor-info img {
+        width: 25vw;
+        margin: 2vw 5vw 5vw 0; }
+      .wrapper .intro .processor-info p {
+        font-size: 3.9vw;
+        line-height: 1.28;
+        text-align: left;
+        color: #ffffff; }
+        .wrapper .intro .processor-info p span.blue {
+          font-size: 6.16vw; }
+  .wrapper .performance {
+    padding: 7vw 5.6vw 0;
+    flex-flow: column nowrap;
+    align-items: flex-start; }
+    .wrapper .performance .bullets-wrapper {
+      width: 100%; }
+      .wrapper .performance .bullets-wrapper h2 {
+        font-size: 12.6vw;
+        line-height: 0.93;
+        letter-spacing: 0.57px; }
+      .wrapper .performance .bullets-wrapper ul {
+        padding-left: 12vw;
+        margin: 9vw 0 0; }
+        .wrapper .performance .bullets-wrapper ul li {
+          margin: 3.75vw 0;
+          font-size: 3.92vw; }
+          .wrapper .performance .bullets-wrapper ul li::before {
+            top: -7px; }
+    .wrapper .performance .specs-wrapper {
+      width: 100%;
+      margin: 5% 0; }
+      .wrapper .performance .specs-wrapper table.comparison {
+        width: 100%;
+        position: relative; }
+        .wrapper .performance .specs-wrapper table.comparison::after {
+          content: '';
+          position: absolute;
+          bottom: 4%;
+          left: 50%;
+          width: 1px;
+          height: 70%;
+          background: white; }
+        .wrapper .performance .specs-wrapper table.comparison caption {
+          justify-content: center;
+          margin: 5% 0; }
+          .wrapper .performance .specs-wrapper table.comparison caption span {
+            font-size: 7.8vw;
+            letter-spacing: 0.59px; }
+          .wrapper .performance .specs-wrapper table.comparison caption img {
+            width: 16.84vw;
+            margin-left: 4vw; }
+        .wrapper .performance .specs-wrapper table.comparison tr.row td.left {
+          width: 36vw;
+          height: 15vw; }
+          .wrapper .performance .specs-wrapper table.comparison tr.row td.left .data-wrapper p {
+            font-size: 4.35vw; }
+        .wrapper .performance .specs-wrapper table.comparison tr.row:nth-of-type(odd) td.right, .wrapper .performance .specs-wrapper table.comparison tr.row:nth-of-type(even) td.right {
+          background: none; }
+        .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper {
+          padding: 0.7vw;
+          padding-left: 6vw;
+          width: 40vw;
+          height: 15vw;
+          justify-content: flex-start; }
+          .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper .icon {
+            display: none; }
+          .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper p {
+            font-size: 4.35vw;
+            line-height: 0.91;
+            width: auto; }
+            .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper p span.smaller {
+              font-size: 90%; }
+  .wrapper .animation .animation-component-wrapper {
+    padding: 0 5.6vw; }
+    .wrapper .animation .animation-component-wrapper > div {
+      display: flex;
+      flex-flow: column nowrap; }
+  .wrapper .art .art-wrapper {
+    overflow: hidden; }
+    .wrapper .art .art-wrapper img {
+      width: 130%; }
+  .wrapper .art .btn-wrapper {
+    display: flex;
+    justify-content: center; }
+  .wrapper footer {
+    padding: 15% 5.6vw; }
+    .wrapper footer p.legal {
+      font-size: 2.2vw; } }
 /*******************/
 /**** XL SCREEN ****/
 /*******************/
@@ -402,6 +712,79 @@ body {
       .home .links-wrapper .link a {
         font-size: 42.25px; }
     .home .btn-wrapper {
-      margin: 12.8px 0; } }
+      margin: 12.8px 0; }
+
+  .wrapper.casual .performance .specs-wrapper table.comparison .frequency {
+    width: 108.8px; }
+  .wrapper.casual .performance .specs-wrapper table.comparison .cores {
+    width: 38.4px; }
+  .wrapper.casual .performance .specs-wrapper table.comparison .threads {
+    width: 89.6px; }
+  .wrapper.casual .performance .specs-wrapper table.comparison .cache {
+    width: 38.4px; }
+  .wrapper.casual .performance .specs-wrapper table.comparison .locked {
+    width: 25.6px; }
+  .wrapper.competitivo .performance .specs-wrapper table.comparison .frequency {
+    width: 108.8px; }
+  .wrapper.competitivo .performance .specs-wrapper table.comparison .cores {
+    width: 38.4px; }
+  .wrapper.competitivo .performance .specs-wrapper table.comparison .threads {
+    width: 89.6px; }
+  .wrapper.competitivo .performance .specs-wrapper table.comparison .cache {
+    width: 38.4px; }
+  .wrapper.competitivo .performance .specs-wrapper table.comparison .locked {
+    width: 25.6px; }
+  .wrapper .intro {
+    padding-left: 100px; }
+    .wrapper .intro .headlines-wrapper h2 {
+      font-size: 74.88px; }
+    .wrapper .intro .headlines-wrapper p {
+      font-size: 24.96px;
+      margin-top: 19.2px; }
+    .wrapper .intro .processor-info {
+      margin: 76.8px 0 89.6px; }
+      .wrapper .intro .processor-info img {
+        margin-right: 38.4px;
+        width: 108.8px; }
+      .wrapper .intro .processor-info p {
+        font-size: 19.5px; }
+        .wrapper .intro .processor-info p span.blue {
+          font-size: 30.72px; }
+  .wrapper .performance {
+    padding: 57.5px 100px 0; }
+    .wrapper .performance .bullets-wrapper h2 {
+      font-size: 68px; }
+    .wrapper .performance .bullets-wrapper ul {
+      padding-left: 108.8px;
+      margin: 39.68px 0 0; }
+      .wrapper .performance .bullets-wrapper ul li {
+        margin: 22.4px 0;
+        font-size: 19.2px; }
+    .wrapper .performance .specs-wrapper table.comparison caption span {
+      font-size: 37px; }
+    .wrapper .performance .specs-wrapper table.comparison caption img {
+      width: 89.6px;
+      margin-left: 25.6px; }
+    .wrapper .performance .specs-wrapper table.comparison tr.row td.left {
+      width: 149.76px;
+      height: 64px; }
+      .wrapper .performance .specs-wrapper table.comparison tr.row td.left .data-wrapper p {
+        font-size: 17.9px; }
+    .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper {
+      padding: 8.9px;
+      padding-left: 76.8px;
+      height: 64px;
+      width: 281.6px; }
+      .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper p {
+        font-size: 19.2px;
+        width: 83.2px; }
+        .wrapper .performance .specs-wrapper table.comparison tr.row td.right .data-wrapper p span.smaller {
+          font-size: 12.8px; }
+  .wrapper .animation .animation-component-wrapper {
+    padding: 0 100px; }
+  .wrapper footer {
+    padding: 5% 100px; }
+    .wrapper footer p.legal {
+      font-size: 10.88px; } }
 
 /*# sourceMappingURL=style.css.map */

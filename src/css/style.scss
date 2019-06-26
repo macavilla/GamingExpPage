@@ -50,7 +50,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
+body {
   background: black;
 }
 
@@ -63,26 +63,26 @@ body{
   max-width: 1280px;
 }
 
-#___gatsby h1,
-#___gatsby h2 {
+h1,
+h2 {
   font-family: "IntelClearPro";
 }
 
-#___gatsby h3,
-#___gatsby h4 {
+h3,
+h4 {
   font-family: "IntelClearBold";
 }
 
-#___gatsby h5,
-#___gatsby h6 {
+h5,
+h6 {
   font-family: "IntelClearThin";
 }
 
-#___gatsby p {
+p {
   font-family: "IntelClear";
 }
 
-#___gatsby sup {
+sup {
   font-size: 57%;
 }
 
@@ -185,6 +185,334 @@ body{
   }
 }
 
+.wrapper {
+  max-width: 1280px;
+  &.casual {
+    background: url("../img/casual-background.png");
+    background-size: cover;
+
+    .performance{
+      .specs-wrapper{
+        table.comparison{
+          //size of icons 
+          .frequency{
+            width: 8.5vw;
+          }
+          .cores{
+            width: 3vw;
+          }
+          .threads{
+            width: 7vw;            
+          }
+          .cache{
+            width: 3vw;
+          }
+          .locked{
+            width: 2vw;
+          }
+        }
+      }
+    }
+  }
+  &.competitivo {
+    background: url("../img/competitivo-background.png");
+    background-size: cover;
+
+    .performance{
+      .specs-wrapper{
+        table.comparison{
+          //size of icons 
+          .frequency{
+            width: 8.5vw;
+          }
+          .cores{
+            width: 3vw;
+          }
+          .threads{
+            width: 7vw;            
+          }
+          .cache{
+            width: 3vw;
+          }
+          .locked{
+            width: 2vw;
+          }
+        }
+      }
+    }
+  }
+  &.extremo {
+    background: url("../img/extremo-background.png");
+    background-size: cover;
+
+    .performance{
+      .specs-wrapper{
+        table.comparison{
+          //size of icons 
+          .frequency{
+            width: 8.5vw;
+          }
+          .cores{
+            width: 3vw;
+          }
+          .threads{
+            width: 7vw;            
+          }
+          .cache{
+            width: 3vw;
+          }
+          .locked{
+            width: 2vw;
+          }
+        }
+      }
+    }
+  }
+  .intro {
+    padding-left: $main-padding-left-dk;
+    width: 40%;
+
+    .headlines-wrapper {
+      h2 {
+        font-size: 5.85vw;
+        line-height: 0.91;
+        letter-spacing: -0.75px;
+        text-align: left;
+        color: #fefefe;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: 1.95vw;
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: #fefefe;
+        margin-top: 1.5vw;
+      }
+    }
+
+    .processor-info {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 6vw 0 7vw;
+
+      .badges{
+        display: flex;
+
+      }
+
+      img {
+        margin-right: 3vw;
+        width: 8.5vw;
+        box-shadow: 0 0 30px rgba(121, 50, 178, 1)  ; 
+        -webkit-box-shadow: 0 0 30px rgba(121, 50, 178, 1)  ; 
+        -moz-box-shadow: 0 0 30px rgba(121, 50, 178, 1)  ; 
+      }
+
+      p {
+        font-size: 1.53vw;
+        line-height: 1.28;
+        text-align: left;
+        color: #ffffff;
+
+        span.blue {
+          display: block;
+          color: $light-blue;
+          font-size: 2.4vw;
+          font-weight: bold;
+          font-style: italic;
+          letter-spacing: -0.31px;
+        }
+      }
+    }
+  }
+
+  .performance {
+    padding: 4.5vw $main-padding-left-dk 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    .bullets-wrapper {
+      width: 52%;
+      h2 {
+        font-size: 5.33vw;
+        font-weight: bold;
+        line-height: 0.86;
+        letter-spacing: 0.34px;
+        text-align: left;
+        color: $light-blue;
+      }
+
+      ul {
+        padding-left: 8.5vw;
+        margin: 3.1vw 0 0;
+
+        li {
+          font-family: "IntelClear", serif;
+          position: relative;
+          margin: 1.75vw 0;
+          font-size: 1.5vw;
+          //bullet image
+          &::before {
+            background-image: url("../img/list-item.png");
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: -60px;
+          }
+        }
+      }
+    }
+
+    .specs-wrapper {
+      table.comparison {
+        caption {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-end;
+          align-items: center;
+          margin: 3% 0;
+
+          span {
+            font-family: "IntelClearPro";
+            font-size: 2.95vw;
+            font-weight: bold;
+            line-height: 0.95;
+            text-align: center;
+            color: $light-blue;
+          }
+
+          img {
+            width: 7vw;
+            margin-left: 2vw;
+            box-shadow: 0 0 30px rgba(121, 50, 178, 1);
+            -webkit-box-shadow: 0 0 30px rgba(121, 50, 178, 1);
+            -moz-box-shadow: 0 0 30px rgba(121, 50, 178, 1);
+          }
+        }
+
+        tr.row {
+          td.left {
+            background-image: url("../img/td-left-background.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 11.7vw;
+            height: 5vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .data-wrapper {
+              p {
+                font-size: 1.4vw;
+                line-height: 1.11;
+                letter-spacing: -0.45px;
+                text-align: right;
+                color: #ffffff;
+
+                span.blue {
+                  color: $light-blue;
+                  font-weight: bold;
+                  display: block;
+                }
+              }
+            }
+          }
+          //right column backgrounds
+          &:nth-of-type(odd) {
+            td.right {
+              background-image: url("../img/td-odd-background.png");
+              background-size: cover;
+            }
+          }
+          &:nth-of-type(even) {
+            td.right {
+              background-image: url("../img/td-even-background.png");
+              background-size: cover;
+            }
+          }
+          td.right {
+            .data-wrapper {
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0.7vw;
+              padding-left: 6vw;
+              height: 5vw;
+              width: 22vw;
+
+              .icon {
+                img {
+                  max-width: 100%;
+                }
+              }
+
+              p {
+                font-family: IntelClear;
+                font-size: 1.5vw;
+                font-weight: bold;
+                line-height: 1.3;
+                letter-spacing: -0.5px;
+                text-align: left;
+                color: $light-blue;
+                width: 6.5vw;
+
+                span.smaller {
+                  display: block;
+                  font-size: 1vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .animation {
+    .animation-component-wrapper {
+      padding: 0 $main-padding-left-dk;
+      margin: 0 auto;
+      > div {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+    }
+  }
+
+  .art {
+    .art-wrapper {
+      display: flex;
+      justify-content: center;
+      img {
+        // margin: -5vw 0 0;
+        width: 90%;
+      }
+    }
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  footer {
+    padding: 5% $main-padding-left-dk;
+    p.legal {
+      font-family: "IntelClearThin", sans-serif;
+      font-size: 0.85vw;
+      font-weight: 300;
+      line-height: 1.45;
+      letter-spacing: -0.06px;
+    }
+  }
+}
+
 /*****************/
 /**** MOBILE ****/
 /*****************/
@@ -249,8 +577,190 @@ body{
       display: block;
     }
 
-    .btn-wrapper{
+    .btn-wrapper {
       margin: 3vw 0 0;
+    }
+  }
+
+  .wrapper {
+    &.casual {
+      background: url("../img/casual-background-mb.png");
+      background-size: cover;
+    }
+    .intro {
+      padding-left: $main-padding-left-mb;
+      width: 57%;
+
+      .headlines-wrapper {
+        h2 {
+          font-size: 19vw;
+          line-height: 0.72;
+          letter-spacing: 1.43px;
+        }
+
+        p {
+          font-size: 4.8vw;
+          line-height: 1.25;
+          margin-top: 7vw;
+        }
+      }
+
+      .processor-info {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        margin-bottom: 9vw;
+
+        img {
+          width: 25vw;
+          margin: 2vw 5vw 5vw 0;
+        }
+
+        p {
+          font-size: 3.9vw;
+          line-height: 1.28;
+          text-align: left;
+          color: #ffffff;
+
+          span.blue {
+            font-size: 6.16vw;
+          }
+        }
+      }
+    }
+
+    .performance {
+      padding: 7vw $main-padding-left-mb 0;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+  
+      .bullets-wrapper {
+        width: 100%;
+        h2 {
+          font-size: 12.6vw;
+          line-height: 0.93;
+          letter-spacing: 0.57px;
+        }
+  
+        ul {
+          padding-left: 12vw;
+          margin: 9vw 0 0;
+  
+          li {
+            margin: 3.75vw 0;
+            font-size: 3.92vw;
+            //bullet image
+            &::before {
+              top: -7px;
+            }
+          }
+        }
+      }
+  
+      .specs-wrapper {
+        width: 100%;
+        margin: 5% 0;
+        table.comparison {
+          width: 100%;
+          position: relative;
+
+          &::after{
+            content: '';
+            position: absolute;
+            bottom: 4%;
+            left: 50%;
+            width: 1px;
+            height: 70%;
+            background: white;
+          }
+          caption {
+            justify-content: center;
+            margin: 5% 0;
+  
+            span {
+              font-size: 7.8vw;
+              letter-spacing: 0.59px;
+            }
+  
+            img {
+              width: 16.84vw;
+              margin-left: 4vw;
+            }
+          }
+  
+          tr.row {
+            td.left {
+              width: 36vw;
+              height: 15vw;
+  
+              .data-wrapper {
+                p {
+                  font-size: 4.35vw;
+                }
+              }
+            }
+            //right column backgrounds
+            &:nth-of-type(odd),
+            &:nth-of-type(even) {
+              td.right {
+                background: none;
+              }
+            }
+            td.right {
+              .data-wrapper {
+                padding: 0.7vw;
+                padding-left: 6vw;
+                width: 40vw;
+                height: 15vw;
+                justify-content: flex-start;
+                .icon {
+                  display: none;
+                }
+  
+                p {
+                  font-size: 4.35vw;
+                  line-height: 0.91;
+                  width: auto; 
+  
+                  span.smaller {
+                    font-size: 90%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .animation {
+      .animation-component-wrapper {
+        padding: 0 $main-padding-left-mb;
+        // margin: 0 auto;
+        > div {
+          display: flex;
+          flex-flow: column nowrap;
+        }
+      }
+    }
+
+    .art {
+      .art-wrapper {
+        overflow: hidden;
+        img {
+          width: 130%;
+        }
+      }
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    footer {
+      padding: 15% $main-padding-left-mb;
+      p.legal {
+        font-size: 2.2vw;
+      }
     }
   }
 }
@@ -260,50 +770,205 @@ body{
 /*******************/
 
 @media screen and (min-width: 1280px) {
-
   .home {
     min-height: 100vh;
-  
+
     .intel-logo {
       width: 83.2px;
     }
-  
+
     .top-wrapper {
       padding: 104.95px 0 0 95px;
       .headlines-wrapper {
         h1 {
           font-size: 74.88px;
         }
-  
+
         p {
           font-size: 27.9px;
           margin-top: 21.12px;
         }
       }
-  
+
       .coreFamily {
         top: 38.4px;
         right: 3.84px;
         width: 524.8px;
       }
     }
-  
+
     .links-wrapper {
-  
       .link {
         width: 358px;
         height: 358px;
 
-  
         a {
           font-size: 42.25px;
+        }
+      }
+    }
 
+    .btn-wrapper {
+      margin: 12.8px 0;
+    }
+  }
+  .wrapper {
+    &.casual { 
+      .performance{
+        .specs-wrapper{
+          table.comparison{
+            //size of icons 
+            .frequency{
+              width: 108.8px;
+            }
+            .cores{
+              width: 38.4px;
+            }
+            .threads{
+              width: 89.6px;            
+            }
+            .cache{
+              width: 38.4px;
+            }
+            .locked{
+              width: 25.6px;
+            }
+          }
+        }
+      }
+    }
+    &.competitivo { 
+      .performance{
+        .specs-wrapper{
+          table.comparison{
+            //size of icons 
+            .frequency{
+              width: 108.8px;
+            }
+            .cores{
+              width: 38.4px;
+            }
+            .threads{
+              width: 89.6px;            
+            }
+            .cache{
+              width: 38.4px;
+            }
+            .locked{
+              width: 25.6px;
+            }
+          }
+        }
+      }
+    }
+    .intro {
+      padding-left: $main-padding-left-xl;
+  
+      .headlines-wrapper {
+        h2 {
+          font-size: 74.88px;
+        }
+  
+        p {
+          font-size: 24.96px;
+          margin-top: 19.2px;
+        }
+      }
+  
+      .processor-info {
+        margin: 76.8px 0 89.6px;
+  
+        img {
+          margin-right: 38.4px;
+          width: 108.8px;
+        }
+  
+        p {
+          font-size: 19.5px;
+  
+          span.blue {
+            font-size: 30.72px;
+          }
         }
       }
     }
   
-    .btn-wrapper {
-      margin: 12.8px 0;
+    .performance {
+      padding: 57.5px $main-padding-left-xl 0;  
+      .bullets-wrapper {
+        h2 {
+          font-size: 68px;
+        }
+  
+        ul {
+          padding-left: 108.8px;
+          margin: 39.68px 0 0;
+  
+          li {
+            margin: 22.4px 0;
+            font-size: 19.2px;
+          }
+        }
+      }
+  
+      .specs-wrapper {
+        table.comparison {
+          caption {  
+            span {
+              font-size: 37px;
+            }
+  
+            img {
+              width: 89.6px;
+              margin-left: 25.6px;
+            }
+          }
+  
+          tr.row {
+            td.left {
+              width: 149.76px;
+              height: 64px;
+  
+              .data-wrapper {
+                p {
+                  font-size: 17.9px;
+                }
+              }
+            }
+
+            td.right {
+              .data-wrapper {
+                padding: 8.9px;
+                padding-left: 76.8px;
+                height: 64px;
+                width: 281.6px;
+  
+                p {
+                  font-size: 19.2px;
+                  width: 83.2px;
+  
+                  span.smaller {
+                    font-size: 12.8px; 
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .animation {
+      .animation-component-wrapper {
+        padding: 0 $main-padding-left-xl;
+      }
+    }
+  
+    footer {
+      padding: 5% $main-padding-left-xl;
+      p.legal {
+        font-size: 10.88px;
+      }
     }
   }
 }

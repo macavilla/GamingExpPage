@@ -10,12 +10,15 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "deploy": "gatsby-plugin-s3 deploy",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "gatsby": "^2.9.6",
+    "gatsby-plugin-s3": "^0.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-lottie": "^1.2.3",
     "react-slick": "^0.24.0",
     "slick-carousel": "^1.8.1"
   },

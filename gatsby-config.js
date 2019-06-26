@@ -6,4 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  // pathPrefix: `/site`, 
+  plugins: [
+    {
+        resolve: `gatsby-plugin-s3`,
+        options: {
+            bucketName: 'gaming-exp-page'
+        },
+    },
+   ]
 }
