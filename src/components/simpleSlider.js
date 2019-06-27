@@ -10,6 +10,7 @@ export default class SimpleSlider extends Component {
       className: "links-wrapper",
       arrows: false,
       centerMode: true,
+      centerPadding: '25px',
       infinite: false,
       speed: 500,
       slidesToShow: 1,
@@ -18,17 +19,17 @@ export default class SimpleSlider extends Component {
     return (
       <div>
         <Slider {...settings}>
-          <div class="item">
+          <div className="item">
             <div className="link casual">
               <Link to="/casual/">casual</Link>
             </div>
           </div>
-          <div class="item">
+          <div className="item">
             <div className="link competitivo">
               <Link to="/competitivo/">competitivo</Link>
             </div>
           </div>
-          <div class="item">
+          <div className="item">
             <div className="link extremo">
               <Link to="/extremo/">extremo</Link>
             </div>

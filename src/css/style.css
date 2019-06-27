@@ -4,10 +4,11 @@
 ----------------------------------------------------------------
 1.0 Reset
 2.0 Fuentes
-3.0 VARIABLES
+3.0 variables
 4.0 btns
-5.0 GENERAL
-6.0 GENERAL
+5.0 Slick carousel styles
+6.0 NavBar styles
+7.0 General
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 Reset
@@ -131,6 +132,12 @@ button {
   letter-spacing: -0.2px;
   padding: 0.5vw 4vw;
   cursor: pointer; }
+  .main-btn:hover {
+    background: #7832b2;
+    background: -moz-linear-gradient(270deg, #7832b2 0%, #391855 100%);
+    background: -webkit-linear-gradient(270deg, #7832b2 0%, #391855 100%);
+    background: linear-gradient(270deg, #7832b2 0%, #391855 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7832b2",endColorstr="#391855",GradientType=1); }
 
 /*****************/
 /**** MOBILE ****/
@@ -227,7 +234,125 @@ button {
   display: none; }
 
 /*--------------------------------------------------------------
-6.0 General
+6.0 NavBar styles
+--------------------------------------------------------------*/
+/*FUENTES*/
+/*COLORES*/
+/* GRADIENTES */
+/*GRID OPTIONS*/
+/*****************/
+/**** DESKTOP ****/
+/*****************/
+nav .nav-wrapper {
+  background: #002449; }
+  nav .nav-wrapper.desktop {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 7.81vw;
+    position: relative; }
+    nav .nav-wrapper.desktop .home-icon {
+      position: absolute;
+      left: 7.81vw; }
+    nav .nav-wrapper.desktop ul.tabs-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a {
+        background: #002044;
+        background: -moz-linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
+        background: -webkit-linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
+        background: linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1);
+        color: white;
+        font-family: IntelClear;
+        font-size: 1.4vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0.35vw 8vw; }
+        nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a.active {
+          background: #002044;
+          background: -moz-linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
+          background: -webkit-linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
+          background: linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1); }
+  nav .nav-wrapper.mobile {
+    display: none; }
+
+/*****************/
+/**** MOBILE ****/
+/*****************/
+@media screen and (max-width: 768px) {
+  nav .nav-wrapper.desktop {
+    display: none; }
+  nav .nav-wrapper.mobile {
+    display: block;
+    position: relative;
+    padding: 0 5.6vw 0;
+    height: 80px; }
+    nav .nav-wrapper.mobile .intel-logo {
+      width: 40px;
+      position: absolute;
+      top: 40px;
+      right: 5.6vw; }
+    nav .nav-wrapper.mobile .menu-trigger {
+      position: absolute;
+      top: 40px;
+      left: 5.6vw;
+      display: flex;
+      flex-flow: column nowrap;
+      cursor: pointer; }
+      nav .nav-wrapper.mobile .menu-trigger span {
+        width: 3.5vw;
+        height: 0.4vw;
+        background: white;
+        margin: 0.3vw 0;
+        transition: .5s linear all; }
+        nav .nav-wrapper.mobile .menu-trigger span:nth-of-type(1) {
+          margin-top: 0; }
+    nav .nav-wrapper.mobile .tabsWrapper {
+      transition: all .5s linear;
+      position: absolute;
+      top: -200%;
+      left: 0; }
+      nav .nav-wrapper.mobile .tabsWrapper .tab a {
+        background-image: url("../img/background-tab.png");
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 160px;
+        font-family: IntelClear;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 0.88px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fefefe;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      nav .nav-wrapper.mobile .tabsWrapper.active {
+        top: 80px; }
+        nav .nav-wrapper.mobile .tabsWrapper.active .tab a {
+          background-image: url("../img/background-tab-active.png"); } }
+/*******************/
+/**** XL SCREEN ****/
+/*******************/
+@media screen and (min-width: 1280px) {
+  nav .nav-wrapper.desktop {
+    padding: 12.8px 100px; }
+    nav .nav-wrapper.desktop .home-icon {
+      left: 100px; }
+    nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a {
+      font-size: 18px;
+      padding: 4.4px 102.4px; } }
+/*--------------------------------------------------------------
+7.0 General
 --------------------------------------------------------------*/
 * {
   -webkit-box-sizing: border-box;
@@ -400,7 +525,10 @@ sup {
       align-items: center;
       margin: 6vw 0 7vw; }
       .wrapper .intro .processor-info .badges {
-        display: flex; }
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center; }
       .wrapper .intro .processor-info img {
         margin-right: 3vw;
         width: 8.5vw;
@@ -434,7 +562,7 @@ sup {
         text-align: left;
         color: #94c9ff; }
       .wrapper .performance .bullets-wrapper ul {
-        padding-left: 8.5vw;
+        padding-left: 5.2vw;
         margin: 3.1vw 0 0; }
         .wrapper .performance .bullets-wrapper ul li {
           font-family: "IntelClear", serif;
@@ -443,11 +571,12 @@ sup {
           font-size: 1.5vw; }
           .wrapper .performance .bullets-wrapper ul li::before {
             background-image: url("../img/list-item.png");
+            background-size: cover;
             content: "";
             position: absolute;
-            width: 40px;
-            height: 40px;
-            left: -60px; }
+            width: 3vw;
+            height: 3vw;
+            left: -5vw; }
     .wrapper .performance .specs-wrapper table.comparison caption {
       display: flex;
       flex-flow: row nowrap;
@@ -584,6 +713,12 @@ sup {
   .wrapper.casual {
     background: url("../img/casual-background-mb.png");
     background-size: cover; }
+  .wrapper.competitivo {
+    background: url("../img/competitivo-background-mb.png");
+    background-size: cover; }
+  .wrapper.extremo {
+    background: url("../img/extremo-background-mb.png");
+    background-size: cover; }
   .wrapper .intro {
     padding-left: 5.6vw;
     width: 57%; }
@@ -616,7 +751,7 @@ sup {
     .wrapper .performance .bullets-wrapper {
       width: 100%; }
       .wrapper .performance .bullets-wrapper h2 {
-        font-size: 12.6vw;
+        font-size: 11.5vw;
         line-height: 0.93;
         letter-spacing: 0.57px; }
       .wrapper .performance .bullets-wrapper ul {
@@ -626,7 +761,10 @@ sup {
           margin: 3.75vw 0;
           font-size: 3.92vw; }
           .wrapper .performance .bullets-wrapper ul li::before {
-            top: -7px; }
+            top: -7px;
+            width: 7vw;
+            height: 7vw;
+            left: -11vw; }
     .wrapper .performance .specs-wrapper {
       width: 100%;
       margin: 5% 0; }
@@ -634,7 +772,7 @@ sup {
         width: 100%;
         position: relative; }
         .wrapper .performance .specs-wrapper table.comparison::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 4%;
           left: 50%;
@@ -756,10 +894,15 @@ sup {
       font-size: 68px; }
     .wrapper .performance .bullets-wrapper ul {
       padding-left: 108.8px;
+      padding-left: 66.5px;
       margin: 39.68px 0 0; }
       .wrapper .performance .bullets-wrapper ul li {
         margin: 22.4px 0;
         font-size: 19.2px; }
+        .wrapper .performance .bullets-wrapper ul li::before {
+          width: 38.4px;
+          height: 38.4px;
+          left: -64px; }
     .wrapper .performance .specs-wrapper table.comparison caption span {
       font-size: 37px; }
     .wrapper .performance .specs-wrapper table.comparison caption img {

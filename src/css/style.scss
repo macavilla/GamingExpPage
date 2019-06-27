@@ -3,10 +3,11 @@
 ----------------------------------------------------------------
 1.0 Reset
 2.0 Fuentes
-3.0 VARIABLES
+3.0 variables
 4.0 btns
-5.0 GENERAL
-6.0 GENERAL
+5.0 Slick carousel styles
+6.0 NavBar styles
+7.0 General
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -40,7 +41,13 @@
 @import "sass/slick";
 
 /*--------------------------------------------------------------
-6.0 General
+6.0 NavBar styles
+--------------------------------------------------------------*/
+
+@import "sass/navBar";
+
+/*--------------------------------------------------------------
+7.0 General
 --------------------------------------------------------------*/
 
 * {
@@ -191,23 +198,23 @@ sup {
     background: url("../img/casual-background.png");
     background-size: cover;
 
-    .performance{
-      .specs-wrapper{
-        table.comparison{
-          //size of icons 
-          .frequency{
+    .performance {
+      .specs-wrapper {
+        table.comparison {
+          //size of icons
+          .frequency {
             width: 8.5vw;
           }
-          .cores{
+          .cores {
             width: 3vw;
           }
-          .threads{
-            width: 7vw;            
+          .threads {
+            width: 7vw;
           }
-          .cache{
+          .cache {
             width: 3vw;
           }
-          .locked{
+          .locked {
             width: 2vw;
           }
         }
@@ -218,23 +225,23 @@ sup {
     background: url("../img/competitivo-background.png");
     background-size: cover;
 
-    .performance{
-      .specs-wrapper{
-        table.comparison{
-          //size of icons 
-          .frequency{
+    .performance {
+      .specs-wrapper {
+        table.comparison {
+          //size of icons
+          .frequency {
             width: 8.5vw;
           }
-          .cores{
+          .cores {
             width: 3vw;
           }
-          .threads{
-            width: 7vw;            
+          .threads {
+            width: 7vw;
           }
-          .cache{
+          .cache {
             width: 3vw;
           }
-          .locked{
+          .locked {
             width: 2vw;
           }
         }
@@ -245,23 +252,23 @@ sup {
     background: url("../img/extremo-background.png");
     background-size: cover;
 
-    .performance{
-      .specs-wrapper{
-        table.comparison{
-          //size of icons 
-          .frequency{
+    .performance {
+      .specs-wrapper {
+        table.comparison {
+          //size of icons
+          .frequency {
             width: 8.5vw;
           }
-          .cores{
+          .cores {
             width: 3vw;
           }
-          .threads{
-            width: 7vw;            
+          .threads {
+            width: 7vw;
           }
-          .cache{
+          .cache {
             width: 3vw;
           }
-          .locked{
+          .locked {
             width: 2vw;
           }
         }
@@ -299,17 +306,19 @@ sup {
       align-items: center;
       margin: 6vw 0 7vw;
 
-      .badges{
+      .badges {
         display: flex;
-
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
       }
 
       img {
         margin-right: 3vw;
         width: 8.5vw;
-        box-shadow: 0 0 30px rgba(121, 50, 178, 1)  ; 
-        -webkit-box-shadow: 0 0 30px rgba(121, 50, 178, 1)  ; 
-        -moz-box-shadow: 0 0 30px rgba(121, 50, 178, 1)  ; 
+        box-shadow: 0 0 30px rgba(121, 50, 178, 1);
+        -webkit-box-shadow: 0 0 30px rgba(121, 50, 178, 1);
+        -moz-box-shadow: 0 0 30px rgba(121, 50, 178, 1);
       }
 
       p {
@@ -348,7 +357,7 @@ sup {
       }
 
       ul {
-        padding-left: 8.5vw;
+        padding-left: 5.2vw;
         margin: 3.1vw 0 0;
 
         li {
@@ -359,11 +368,12 @@ sup {
           //bullet image
           &::before {
             background-image: url("../img/list-item.png");
+            background-size: cover;
             content: "";
             position: absolute;
-            width: 40px;
-            height: 40px;
-            left: -60px;
+            width: 3vw;
+            height: 3vw;
+            left: -5vw;
           }
         }
       }
@@ -587,6 +597,14 @@ sup {
       background: url("../img/casual-background-mb.png");
       background-size: cover;
     }
+    &.competitivo {
+      background: url("../img/competitivo-background-mb.png");
+      background-size: cover;
+    }
+    &.extremo {
+      background: url("../img/extremo-background-mb.png");
+      background-size: cover;
+    }
     .intro {
       padding-left: $main-padding-left-mb;
       width: 57%;
@@ -632,30 +650,33 @@ sup {
       padding: 7vw $main-padding-left-mb 0;
       flex-flow: column nowrap;
       align-items: flex-start;
-  
+
       .bullets-wrapper {
         width: 100%;
         h2 {
-          font-size: 12.6vw;
+          font-size: 11.5vw;
           line-height: 0.93;
           letter-spacing: 0.57px;
         }
-  
+
         ul {
           padding-left: 12vw;
           margin: 9vw 0 0;
-  
+
           li {
             margin: 3.75vw 0;
             font-size: 3.92vw;
             //bullet image
             &::before {
               top: -7px;
+              width: 7vw;
+              height: 7vw;
+              left: -11vw;
             }
           }
         }
       }
-  
+
       .specs-wrapper {
         width: 100%;
         margin: 5% 0;
@@ -663,8 +684,8 @@ sup {
           width: 100%;
           position: relative;
 
-          &::after{
-            content: '';
+          &::after {
+            content: "";
             position: absolute;
             bottom: 4%;
             left: 50%;
@@ -675,23 +696,23 @@ sup {
           caption {
             justify-content: center;
             margin: 5% 0;
-  
+
             span {
               font-size: 7.8vw;
               letter-spacing: 0.59px;
             }
-  
+
             img {
               width: 16.84vw;
               margin-left: 4vw;
             }
           }
-  
+
           tr.row {
             td.left {
               width: 36vw;
               height: 15vw;
-  
+
               .data-wrapper {
                 p {
                   font-size: 4.35vw;
@@ -715,12 +736,12 @@ sup {
                 .icon {
                   display: none;
                 }
-  
+
                 p {
                   font-size: 4.35vw;
                   line-height: 0.91;
-                  width: auto; 
-  
+                  width: auto;
+
                   span.smaller {
                     font-size: 90%;
                   }
@@ -813,48 +834,48 @@ sup {
     }
   }
   .wrapper {
-    &.casual { 
-      .performance{
-        .specs-wrapper{
-          table.comparison{
-            //size of icons 
-            .frequency{
+    &.casual {
+      .performance {
+        .specs-wrapper {
+          table.comparison {
+            //size of icons
+            .frequency {
               width: 108.8px;
             }
-            .cores{
+            .cores {
               width: 38.4px;
             }
-            .threads{
-              width: 89.6px;            
+            .threads {
+              width: 89.6px;
             }
-            .cache{
+            .cache {
               width: 38.4px;
             }
-            .locked{
+            .locked {
               width: 25.6px;
             }
           }
         }
       }
     }
-    &.competitivo { 
-      .performance{
-        .specs-wrapper{
-          table.comparison{
-            //size of icons 
-            .frequency{
+    &.competitivo {
+      .performance {
+        .specs-wrapper {
+          table.comparison {
+            //size of icons
+            .frequency {
               width: 108.8px;
             }
-            .cores{
+            .cores {
               width: 38.4px;
             }
-            .threads{
-              width: 89.6px;            
+            .threads {
+              width: 89.6px;
             }
-            .cache{
+            .cache {
               width: 38.4px;
             }
-            .locked{
+            .locked {
               width: 25.6px;
             }
           }
@@ -863,72 +884,80 @@ sup {
     }
     .intro {
       padding-left: $main-padding-left-xl;
-  
+
       .headlines-wrapper {
         h2 {
           font-size: 74.88px;
         }
-  
+
         p {
           font-size: 24.96px;
           margin-top: 19.2px;
         }
       }
-  
+
       .processor-info {
         margin: 76.8px 0 89.6px;
-  
+
         img {
           margin-right: 38.4px;
           width: 108.8px;
         }
-  
+
         p {
           font-size: 19.5px;
-  
+
           span.blue {
             font-size: 30.72px;
           }
         }
       }
     }
-  
+
     .performance {
-      padding: 57.5px $main-padding-left-xl 0;  
+      padding: 57.5px $main-padding-left-xl 0;
       .bullets-wrapper {
         h2 {
           font-size: 68px;
         }
-  
+
         ul {
           padding-left: 108.8px;
+          padding-left: 66.5px;
           margin: 39.68px 0 0;
-  
+
           li {
             margin: 22.4px 0;
             font-size: 19.2px;
+
+            //bullet image
+            &::before {
+              width: 38.4px;
+              height: 38.4px;
+              left: -64px;
+            }
           }
         }
       }
-  
+
       .specs-wrapper {
         table.comparison {
-          caption {  
+          caption {
             span {
               font-size: 37px;
             }
-  
+
             img {
               width: 89.6px;
               margin-left: 25.6px;
             }
           }
-  
+
           tr.row {
             td.left {
               width: 149.76px;
               height: 64px;
-  
+
               .data-wrapper {
                 p {
                   font-size: 17.9px;
@@ -942,13 +971,13 @@ sup {
                 padding-left: 76.8px;
                 height: 64px;
                 width: 281.6px;
-  
+
                 p {
                   font-size: 19.2px;
                   width: 83.2px;
-  
+
                   span.smaller {
-                    font-size: 12.8px; 
+                    font-size: 12.8px;
                   }
                 }
               }
@@ -957,13 +986,13 @@ sup {
         }
       }
     }
-  
+
     .animation {
       .animation-component-wrapper {
         padding: 0 $main-padding-left-xl;
       }
     }
-  
+
     footer {
       padding: 5% $main-padding-left-xl;
       p.legal {

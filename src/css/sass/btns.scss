@@ -7,12 +7,12 @@
     background: -webkit-linear-gradient(90deg, rgba(120,50,178,1) 0%, rgba(57,24,85,1) 100%);
     background: linear-gradient(90deg, rgba(120,50,178,1) 0%, rgba(57,24,85,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7832b2",endColorstr="#391855",GradientType=1);
-
+    
     -webkit-box-shadow: 15px 50px 62px 10px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 50px 62px 10px rgba(0,0,0,0.75);
     box-shadow: 15px 50px 62px 10px rgba(0,0,0,0.75);
-
-
+    
+    
     color: #fefefe;
     font-family: "IntelClearBold";
     font-size: 1.4vw;
@@ -20,6 +20,15 @@
     letter-spacing: -0.2px;
     padding: 0.5vw 4vw;
     cursor: pointer;
+    
+    &:hover{
+        background: rgb(120,50,178);
+        background: -moz-linear-gradient(270deg, rgba(120,50,178,1) 0%, rgba(57,24,85,1) 100%);
+        background: -webkit-linear-gradient(270deg, rgba(120,50,178,1) 0%, rgba(57,24,85,1) 100%);
+        background: linear-gradient(270deg, rgba(120,50,178,1) 0%, rgba(57,24,85,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7832b2",endColorstr="#391855",GradientType=1);
+        
+    }
 }
 
 

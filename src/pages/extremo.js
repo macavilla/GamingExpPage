@@ -10,13 +10,15 @@ import cores from "../img/icon-4-cores.png"
 import threads from "../img/icon-threads.png"
 import cache from "../img/icon-cache-12.png"
 import locked from "../img/icon-unlocked.png"
-import art from "../img/arte-casual.png"
+import art from "../img/arte-extremo.png"
 //animation
 // import AnimationCasual from "../components/animationCasual"
 // import AnimationCompetitive from "../components/animationCompetitive"
 import AnimationExtreme from "../components/animationExtreme"
 
 export default () => (
+  <Layout>
+  
   <div className="wrapper extremo">
     <section className="intro">
       <div className="headlines-wrapper">
@@ -40,7 +42,7 @@ export default () => (
       </div>
 
       <div className="btn-wrapper">
-        <a href="" className="main-btn">
+        <a href="#" className="main-btn">
           Ver Produtos >
         </a>
       </div>
@@ -182,7 +184,7 @@ export default () => (
         <img src={art} alt="Laptop y naves espaciales" />
       </div>
       <div className="btn-wrapper">
-        <a href="" className="main-btn">
+        <a href="#" className="main-btn">
           Ver Produtos >
         </a>
       </div>
@@ -253,4 +255,5 @@ export default () => (
       </p>
     </footer>
   </div>
+  </Layout>
 )

@@ -37,7 +37,7 @@ class AnimationExtreme extends Component {
 
   
       const defaultOptions1 = {
-        loop: true,
+        loop: false,
         autoplay: true, 
         animationData: isDesktop ? extremeData1Dk : extremeData1Mb,
         rendererSettings: {
@@ -45,7 +45,7 @@ class AnimationExtreme extends Component {
         }
       };
       const defaultOptions2 = {
-        loop: true,
+        loop: false,
         autoplay: true, 
         animationData: isDesktop ? extremeData2Dk : extremeData2Mb,
         rendererSettings: {

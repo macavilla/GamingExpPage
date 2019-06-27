@@ -18,6 +18,12 @@
   letter-spacing: -0.2px;
   padding: 0.5vw 4vw;
   cursor: pointer; }
+  .main-btn:hover {
+    background: #7832b2;
+    background: -moz-linear-gradient(270deg, #7832b2 0%, #391855 100%);
+    background: -webkit-linear-gradient(270deg, #7832b2 0%, #391855 100%);
+    background: linear-gradient(270deg, #7832b2 0%, #391855 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7832b2",endColorstr="#391855",GradientType=1); }
 
 /*****************/
 /**** MOBILE ****/

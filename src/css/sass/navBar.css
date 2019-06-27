@@ -1,0 +1,117 @@
+/*FUENTES*/
+/*COLORES*/
+/* GRADIENTES */
+/*GRID OPTIONS*/
+/*****************/
+/**** DESKTOP ****/
+/*****************/
+nav .nav-wrapper {
+  background: #002449; }
+  nav .nav-wrapper.desktop {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 7.81vw;
+    position: relative; }
+    nav .nav-wrapper.desktop .home-icon {
+      position: absolute;
+      left: 7.81vw; }
+    nav .nav-wrapper.desktop ul.tabs-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a {
+        background: #002044;
+        background: -moz-linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
+        background: -webkit-linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
+        background: linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1);
+        color: white;
+        font-family: IntelClear;
+        font-size: 1.4vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0.35vw 8vw; }
+        nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a.active {
+          background: #002044;
+          background: -moz-linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
+          background: -webkit-linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
+          background: linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1); }
+  nav .nav-wrapper.mobile {
+    display: none; }
+
+/*****************/
+/**** MOBILE ****/
+/*****************/
+@media screen and (max-width: 768px) {
+  nav .nav-wrapper.desktop {
+    display: none; }
+  nav .nav-wrapper.mobile {
+    display: block;
+    position: relative;
+    padding: 0 5.6vw 0;
+    height: 80px; }
+    nav .nav-wrapper.mobile .intel-logo {
+      width: 40px;
+      position: absolute;
+      top: 40px;
+      right: 5.6vw; }
+    nav .nav-wrapper.mobile .menu-trigger {
+      position: absolute;
+      top: 40px;
+      left: 5.6vw;
+      display: flex;
+      flex-flow: column nowrap;
+      cursor: pointer; }
+      nav .nav-wrapper.mobile .menu-trigger span {
+        width: 3.5vw;
+        height: 0.4vw;
+        background: white;
+        margin: 0.3vw 0;
+        transition: .5s linear all; }
+        nav .nav-wrapper.mobile .menu-trigger span:nth-of-type(1) {
+          margin-top: 0; }
+    nav .nav-wrapper.mobile .tabsWrapper {
+      transition: all .5s linear;
+      position: absolute;
+      top: -200%;
+      left: 0; }
+      nav .nav-wrapper.mobile .tabsWrapper .tab a {
+        background-image: url("../img/background-tab.png");
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 160px;
+        font-family: IntelClear;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 0.88px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fefefe;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      nav .nav-wrapper.mobile .tabsWrapper.active {
+        top: 80px; }
+        nav .nav-wrapper.mobile .tabsWrapper.active .tab a {
+          background-image: url("../img/background-tab-active.png"); } }
+/*******************/
+/**** XL SCREEN ****/
+/*******************/
+@media screen and (min-width: 1280px) {
+  nav .nav-wrapper.desktop {
+    padding: 12.8px 100px; }
+    nav .nav-wrapper.desktop .home-icon {
+      left: 100px; }
+    nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a {
+      font-size: 18px;
+      padding: 4.4px 102.4px; } }
+
+/*# sourceMappingURL=navBar.css.map */

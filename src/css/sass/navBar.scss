@@ -1,0 +1,203 @@
+@import "variables";
+
+/*****************/
+/**** DESKTOP ****/
+/*****************/
+
+nav {
+  .nav-wrapper {
+    background: $navy-blue;
+    &.desktop {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 1vw $main-padding-left-dk;
+      position: relative;
+      .home-icon {
+        position: absolute;
+        left: $main-padding-left-dk;
+      }
+      ul.tabs-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        li.tab {
+          a {
+            background: rgb(0, 32, 68);
+            background: -moz-linear-gradient(
+              90deg,
+              rgba(0, 32, 68, 1) 0%,
+              rgba(0, 32, 68, 0.8323704481792717) 50%,
+              rgba(0, 161, 228, 1) 100%
+            );
+            background: -webkit-linear-gradient(
+              90deg,
+              rgba(0, 32, 68, 1) 0%,
+              rgba(0, 32, 68, 0.8323704481792717) 50%,
+              rgba(0, 161, 228, 1) 100%
+            );
+            background: linear-gradient(
+              90deg,
+              rgba(0, 32, 68, 1) 0%,
+              rgba(0, 32, 68, 0.8323704481792717) 50%,
+              rgba(0, 161, 228, 1) 100%
+            );
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1);
+            color: white;
+            font-family: IntelClear;
+            font-size: 1.4vw;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0.35vw 8vw;
+
+            &.active {
+              background: rgb(0, 32, 68);
+              background: -moz-linear-gradient(
+                90deg,
+                rgba(0, 32, 68, 1) 0%,
+                rgba(0, 161, 228, 1) 30%,
+                rgba(0, 161, 228, 1) 100%
+              );
+              background: -webkit-linear-gradient(
+                90deg,
+                rgba(0, 32, 68, 1) 0%,
+                rgba(0, 161, 228, 1) 30%,
+                rgba(0, 161, 228, 1) 100%
+              );
+              background: linear-gradient(
+                90deg,
+                rgba(0, 32, 68, 1) 0%,
+                rgba(0, 161, 228, 1) 30%,
+                rgba(0, 161, 228, 1) 100%
+              );
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1);
+            }
+          }
+        }
+      }
+    }
+
+    &.mobile {
+      display: none;
+    }
+  }
+}
+/*****************/
+/**** MOBILE ****/
+/*****************/
+
+@media screen and (max-width: 768px) {
+  nav {
+    .nav-wrapper {
+      &.desktop {
+        display: none;
+      }
+
+      &.mobile {
+        display: block;
+        position: relative;
+        padding: 0 $main-padding-left-mb 0;
+        height: 80px;
+        .intel-logo{
+            width: 40px;
+            position: absolute;
+            top: 40px;
+            right: $main-padding-left-mb;
+        }
+
+        .menu-trigger{
+            position: absolute;
+            top: 40px;
+            left: $main-padding-left-mb;
+            display: flex;
+            flex-flow: column nowrap;
+            cursor: pointer;
+            span{
+                width: 3.5vw;
+                height: 0.4vw;
+                background: white;
+                margin: 0.3vw 0;
+                transition: .5s linear all;
+                &:nth-of-type(1){
+                    margin-top: 0;
+                }
+                &:nth-of-type(2){}
+                &:nth-of-type(3){}
+            }
+        }
+
+        .tabsWrapper{
+            transition: all .5s linear;
+            position: absolute;
+            top: -200%;
+            left: 0;
+
+            .tab{
+                a{
+                    background-image: url("../img/background-tab.png");
+                    background-size: 100% 100%;
+                    width: 100vw;
+                    height: 160px;
+                    font-family: IntelClear;
+                    font-size: 25px;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    letter-spacing: 0.88px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #fefefe;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+            
+            
+            &.active{
+                top: 80px;
+                .tab{
+                    a{
+                        background-image: url("../img/background-tab-active.png");
+                    }
+
+                }
+            }
+
+
+
+        }
+      }
+    }
+  }
+}
+
+/*******************/
+/**** XL SCREEN ****/
+/*******************/
+
+@media screen and (min-width: 1280px) {
+  nav {
+    .nav-wrapper {
+      &.desktop {
+        padding: 12.8px $main-padding-left-xl;
+        .home-icon {
+          left: $main-padding-left-xl;
+        }
+        ul.tabs-wrapper {
+          li.tab {
+            a {
+              font-size: 18px;
+              padding: 4.4px 102.4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

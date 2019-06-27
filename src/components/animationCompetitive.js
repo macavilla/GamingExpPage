@@ -37,7 +37,7 @@ class AnimationCompetitive extends Component {
 
   
       const defaultOptions1 = {
-        loop: true,
+        loop: false,
         autoplay: true, 
         animationData: isDesktop ? competitiveData1Dk : competitiveData1Mb,
         rendererSettings: {
@@ -45,7 +45,7 @@ class AnimationCompetitive extends Component {
         }
       };
       const defaultOptions2 = {
-        loop: true,
+        loop: false,
         autoplay: true, 
         animationData: isDesktop ? competitiveData2Dk : competitiveData2Mb,
         rendererSettings: {

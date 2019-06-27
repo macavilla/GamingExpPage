@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import Lottie from 'react-lottie'
 import casualDataDk from '../lotties/Icon Joystick Velocimetro/data.json'
 import casualDataMb from '../lotties/Icon Joystick Velocimetro Smartphone/data.json'
-import casual from '../pages/casual.js';
+// import casual from '../pages/casual.js';
 
 class AnimationCasual extends Component {
   //conditional render of animationData based on window.innerWidth
@@ -36,7 +36,7 @@ class AnimationCasual extends Component {
 
   
       const defaultOptions = {
-        loop: true,
+        loop: false,
         autoplay: true, 
         animationData: isDesktop ? casualDataDk : casualDataMb,
         rendererSettings: {

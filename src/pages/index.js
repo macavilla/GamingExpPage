@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import logo from "../img/logo.png"
 import coreFamily from "../img/badges-1.png"
 import SimpleSlider from "../components/simpleSlider"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 
 export default () => (
   <div className="home">
@@ -39,7 +39,7 @@ export default () => (
     <SimpleSlider className="slider-mobile" />
 
     <div className="btn-wrapper">
-      <a href="" className="main-btn">
+      <a href="#" className="main-btn">
         Ver Produtos >
       </a>
     </div>
