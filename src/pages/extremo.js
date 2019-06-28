@@ -18,178 +18,181 @@ import AnimationExtreme from "../components/animationExtreme"
 
 export default () => (
   <Layout>
-  
-  <div className="wrapper extremo">
-    <section className="intro">
-      <div className="headlines-wrapper">
-        <h2>EXTREMO</h2>
-        <p>
-          Aumente as configurações do jogo, jogue com FPS mais alto e tenha
-          performance máxima para a melhor experiência de jogo.
-        </p>
-      </div>
-
-      <div className="processor-info">
-        <div className="badges">
-          <img src={badge} alt="Intel Core i7 8th Gen" />
-          <img src={badge2} alt="Intel Core i9 8th Gen" />
+    <div className="wrapper extremo">
+      <section className="intro">
+        <div className="headlines-wrapper">
+          <h2>EXTREMO</h2>
+          <p>
+            Aumente as configurações do jogo, jogue com FPS mais alto e tenha
+            performance máxima para a melhor experiência de jogo.
+          </p>
         </div>
-        <p>
-          PROCESSADORES <br />
-          INTEL® CORE™
-          <span className="blue">SÉRIE H</span>
-        </p>
-      </div>
 
-      <div className="btn-wrapper">
-        <a href="#" className="main-btn">
-          Ver Produtos >
-        </a>
-      </div>
-    </section>
-    <section className="performance">
-      <div className="bullets-wrapper">
-        <h2>
-          LIBERE A INTENSIDADE DE UM <br />
-          PROCESSADOR INTEL® CORE™.
-        </h2>
-        <ul>
-          <li>
-            Possibilidade de Overclock para mais desempenho ao jogar em
-            configurações superiores com taxas de quadros aprimoradas.2{" "}
-          </li>
+        <div className="processor-info">
+          <div className="badges">
+            <img src={badge} alt="Intel Core i7 8th Gen" />
+            <img src={badge2} alt="Intel Core i9 8th Gen" />
+          </div>
+          <p>
+            PROCESSADORES <br />
+            INTEL® CORE™
+            <span className="blue">SÉRIE H</span>
+          </p>
+        </div>
 
-          <li>
-            Experiência de jogo imersiva, enquanto você transmite e grava cada
-            movimento em tempo real.
-          </li>
+        <div className="btn-wrapper">
+          <a href="#" className="main-btn">
+            Ver Produtos >
+          </a>
+        </div>
+      </section>
+      <section className="performance">
+        <div className="bullets-wrapper">
+          <h2>
+            LIBERE A INTENSIDADE DE UM <br />
+            PROCESSADOR INTEL® CORE™.
+          </h2>
+          <ul>
+            <li>
+              Possibilidade de Overclock para mais desempenho ao jogar em
+              configurações superiores com taxas de quadros aprimoradas.2{" "}
+            </li>
 
-          <li>
-            Mergulhe na experiência de Realidade Virtual e em jogos com uma
-            incrível resolução em 4K.
-          </li>
-        </ul>
-      </div>
-      <div className="specs-wrapper">
-        <table className="comparison">
-          <caption>
-            <span>i5-8400H</span>
-            <img src={badge} alt="Intel Core i5 8th Gen" />
-          </caption>
-          <tbody>
-            <tr className="row">
-              <td className="left">
-                <div className="data-wrapper">
-                  <p>
-                    FREQUÊNCIA
-                    <span className="blue">(BASE/MAX)</span>
-                  </p>
-                </div>
-              </td>
-              <td className="right">
-                <div className="data-wrapper">
-                  <div className="icon">
-                    <img
-                      className="frequency"
-                      src={frequency}
-                      alt="Frequency icon"
-                    />
+            <li>
+              Experiência de jogo imersiva, enquanto você transmite e grava cada
+              movimento em tempo real.
+            </li>
+
+            <li>
+              Mergulhe na experiência de Realidade Virtual e em jogos com uma
+              incrível resolução em 4K.
+            </li>
+          </ul>
+        </div>
+        <div className="specs-wrapper">
+          <table className="comparison">
+            <caption>
+              <span>i5-8400H</span>
+              <img src={badge} alt="Intel Core i5 8th Gen" />
+            </caption>
+            <tbody>
+              <tr className="row">
+                <td className="left">
+                  <div className="data-wrapper">
+                    <p>
+                      FREQUÊNCIA
+                      <span className="blue">(BASE/MAX)</span>
+                    </p>
                   </div>
+                </td>
+                <td className="right">
+                  <div className="data-wrapper">
+                    <div className="icon">
+                      <img
+                        className="frequency"
+                        src={frequency}
+                        alt="Frequency icon"
+                      />
+                    </div>
 
-                  <p>
-                    2.5 GHZ <br />
-                    4.2 GHZ
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <tr className="row">
-              <td className="left">
-                <div className="data-wrapper">
-                  <p>CORES</p>
-                </div>
-              </td>
-              <td className="right">
-                <div className="data-wrapper">
-                  <div className="icon">
-                    <img className="cores" src={cores} alt="4 cores icon" />
+                    <p>
+                      2.5 GHZ <br />
+                      4.2 GHZ
+                    </p>
                   </div>
-
-                  <p>4</p>
-                </div>
-              </td>
-            </tr>
-            <tr className="row">
-              <td className="left">
-                <div className="data-wrapper">
-                  <p>THREADS</p>
-                </div>
-              </td>
-              <td className="right">
-                <div className="data-wrapper">
-                  <div className="icon">
-                    <img className="threads" src={threads} alt="4 cores icon" />
+                </td>
+              </tr>
+              <tr className="row">
+                <td className="left">
+                  <div className="data-wrapper">
+                    <p>CORES</p>
                   </div>
+                </td>
+                <td className="right">
+                  <div className="data-wrapper">
+                    <div className="icon">
+                      <img className="cores" src={cores} alt="4 cores icon" />
+                    </div>
 
-                  <p>8</p>
-                </div>
-              </td>
-            </tr>
-            <tr className="row">
-              <td className="left">
-                <div className="data-wrapper">
-                  <p>CACHE</p>
-                </div>
-              </td>
-              <td className="right">
-                <div className="data-wrapper">
-                  <div className="icon">
-                    <img className="cache" src={cache} alt="Cache icon" />
+                    <p>4</p>
                   </div>
-
-                  <p>
-                    8 MB
-                    <span className="smaller">SMART CACHE</span>
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <tr className="row">
-              <td className="left">
-                <div className="data-wrapper">
-                  <p>DESBLOQUEADO</p>
-                </div>
-              </td>
-              <td className="right">
-                <div className="data-wrapper">
-                  <div className="icon">
-                    <img className="locked" src={locked} alt="Cache icon" />
+                </td>
+              </tr>
+              <tr className="row">
+                <td className="left">
+                  <div className="data-wrapper">
+                    <p>THREADS</p>
                   </div>
+                </td>
+                <td className="right">
+                  <div className="data-wrapper">
+                    <div className="icon">
+                      <img
+                        className="threads"
+                        src={threads}
+                        alt="4 cores icon"
+                      />
+                    </div>
 
-                  <p>NÃO</p>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <section className="animation">
-      <div className="animation-component-wrapper">
-        <AnimationExtreme />
-      </div>
-    </section>
-    <section className="art">
-      <div className="art-wrapper">
-        <img src={art} alt="Laptop y naves espaciales" />
-      </div>
-      <div className="btn-wrapper">
-        <a href="#" className="main-btn">
-          Ver Produtos >
-        </a>
-      </div>
-    </section>
-    <footer>
+                    <p>8</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="row">
+                <td className="left">
+                  <div className="data-wrapper">
+                    <p>CACHE</p>
+                  </div>
+                </td>
+                <td className="right">
+                  <div className="data-wrapper">
+                    <div className="icon">
+                      <img className="cache" src={cache} alt="Cache icon" />
+                    </div>
+
+                    <p>
+                      8 MB
+                      <span className="smaller">SMART CACHE</span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="row">
+                <td className="left">
+                  <div className="data-wrapper">
+                    <p>DESBLOQUEADO</p>
+                  </div>
+                </td>
+                <td className="right">
+                  <div className="data-wrapper">
+                    <div className="icon">
+                      <img className="locked" src={locked} alt="Cache icon" />
+                    </div>
+
+                    <p>NÃO</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section className="animation">
+        <div className="animation-component-wrapper">
+          <AnimationExtreme />
+        </div>
+      </section>
+      <section className="art">
+        <div className="art-wrapper">
+          <img src={art} alt="Laptop y naves espaciales" />
+        </div>
+        <div className="btn-wrapper">
+          <a href="#" className="main-btn">
+            Ver Produtos >
+          </a>
+        </div>
+      </section>
+      {/*    <footer>
       <p className="legal">
         Os resultados do parâmetro de comparação (ou estimado) relatados acima
         podem precisar de revisão, quando testes adicionais forem realizados. Os
@@ -254,6 +257,7 @@ export default () => (
         terceiros. <br />
       </p>
     </footer>
-  </div>
+        */}
+    </div>
   </Layout>
 )

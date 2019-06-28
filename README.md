@@ -1,7 +1,7 @@
-sass --watch css/:css/ css/sass/:css/sass/
+
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
+<!-- <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
@@ -12,7 +12,7 @@ sass --watch css/:css/ css/sass/:css/sass/
 
 Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._ -->
 
 ## 🚀 Quick start
 
@@ -94,7 +94,16 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+[![Deploy to S3]](https://www.gatsbyjs.org/docs/deploying-to-s3-cloudfront/)
+    ```sh
+    # Install AWS CLI and configure 
+    pip install awscli
+    aws configure
+    ```
+
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 # GamingExpPage
+Compilar Sass: 
+sass --watch css/:css/ css/sass/:css/sass/
+

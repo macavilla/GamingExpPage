@@ -7,6 +7,7 @@ export default ({ children }) => (
     <header style={{ marginBottom: `1.5rem` }}>
       <NavComponent></NavComponent>
     </header>
+    
     {children}
 
     <footer>

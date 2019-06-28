@@ -28,26 +28,8 @@ nav {
         padding: 0;
         li.tab {
           a {
-            background: rgb(0, 32, 68);
-            background: -moz-linear-gradient(
-              90deg,
-              rgba(0, 32, 68, 1) 0%,
-              rgba(0, 32, 68, 0.8323704481792717) 50%,
-              rgba(0, 161, 228, 1) 100%
-            );
-            background: -webkit-linear-gradient(
-              90deg,
-              rgba(0, 32, 68, 1) 0%,
-              rgba(0, 32, 68, 0.8323704481792717) 50%,
-              rgba(0, 161, 228, 1) 100%
-            );
-            background: linear-gradient(
-              90deg,
-              rgba(0, 32, 68, 1) 0%,
-              rgba(0, 32, 68, 0.8323704481792717) 50%,
-              rgba(0, 161, 228, 1) 100%
-            );
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1);
+            background-image: url("../img/background-tab.png");
+            background-size: cover;
             color: white;
             font-family: IntelClear;
             font-size: 1.4vw;
@@ -56,26 +38,7 @@ nav {
             padding: 0.35vw 8vw;
 
             &.active {
-              background: rgb(0, 32, 68);
-              background: -moz-linear-gradient(
-                90deg,
-                rgba(0, 32, 68, 1) 0%,
-                rgba(0, 161, 228, 1) 30%,
-                rgba(0, 161, 228, 1) 100%
-              );
-              background: -webkit-linear-gradient(
-                90deg,
-                rgba(0, 32, 68, 1) 0%,
-                rgba(0, 161, 228, 1) 30%,
-                rgba(0, 161, 228, 1) 100%
-              );
-              background: linear-gradient(
-                90deg,
-                rgba(0, 32, 68, 1) 0%,
-                rgba(0, 161, 228, 1) 30%,
-                rgba(0, 161, 228, 1) 100%
-              );
-              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1);
+              background-image: url("../img/background-tab-active.png");
             }
           }
         }
@@ -134,7 +97,7 @@ nav {
         .tabsWrapper{
             transition: all .5s linear;
             position: absolute;
-            top: -200%;
+            top: -9999px;
             left: 0;
 
             .tab{
@@ -162,10 +125,9 @@ nav {
             &.active{
                 top: 80px;
                 .tab{
-                    a{
+                    a.active{
                         background-image: url("../img/background-tab-active.png");
                     }
-
                 }
             }
 

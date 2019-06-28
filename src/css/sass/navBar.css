@@ -26,11 +26,8 @@ nav .nav-wrapper {
       margin: 0;
       padding: 0; }
       nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a {
-        background: #002044;
-        background: -moz-linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
-        background: -webkit-linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
-        background: linear-gradient(90deg, #002044 0%, rgba(0, 32, 68, 0.8323704482) 50%, #00a1e4 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1);
+        background-image: url("../img/background-tab.png");
+        background-size: cover;
         color: white;
         font-family: IntelClear;
         font-size: 1.4vw;
@@ -38,11 +35,7 @@ nav .nav-wrapper {
         text-transform: uppercase;
         padding: 0.35vw 8vw; }
         nav .nav-wrapper.desktop ul.tabs-wrapper li.tab a.active {
-          background: #002044;
-          background: -moz-linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
-          background: -webkit-linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
-          background: linear-gradient(90deg, #002044 0%, #00a1e4 30%, #00a1e4 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002044",endColorstr="#00a1e4",GradientType=1); }
+          background-image: url("../img/background-tab-active.png"); }
   nav .nav-wrapper.mobile {
     display: none; }
 
@@ -80,7 +73,7 @@ nav .nav-wrapper {
     nav .nav-wrapper.mobile .tabsWrapper {
       transition: all .5s linear;
       position: absolute;
-      top: -200%;
+      top: -9999px;
       left: 0; }
       nav .nav-wrapper.mobile .tabsWrapper .tab a {
         background-image: url("../img/background-tab.png");
@@ -100,7 +93,7 @@ nav .nav-wrapper {
         align-items: center; }
       nav .nav-wrapper.mobile .tabsWrapper.active {
         top: 80px; }
-        nav .nav-wrapper.mobile .tabsWrapper.active .tab a {
+        nav .nav-wrapper.mobile .tabsWrapper.active .tab a.active {
           background-image: url("../img/background-tab-active.png"); } }
 /*******************/
 /**** XL SCREEN ****/

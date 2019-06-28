@@ -25,7 +25,6 @@ class NavComponent extends Component {
       active: this.state.active, // only add this class if the state says so
    });
 
-
     return (
       <nav>
         <div className="nav-wrapper desktop">

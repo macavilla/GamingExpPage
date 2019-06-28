@@ -187,7 +187,7 @@ export default () => (
           </a>
         </div>
       </section>
-      <footer>
+      {/*<footer>
         <p className="legal">
           Os resultados do parâmetro de comparação (ou estimado) relatados acima
           podem precisar de revisão, quando testes adicionais forem realizados.
@@ -253,7 +253,7 @@ export default () => (
           e/ou outros países. *Outros nomes e marcas podem ser de propriedade de
           terceiros. <br />
         </p>
-      </footer>
+          </footer>*/}
     </div>
   </Layout>
 )
